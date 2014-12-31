@@ -1,0 +1,33 @@
+Users:
+  Name
+  Location
+  Employment
+  School
+  Gender = 0,1,2 (the 2 is equal to star) could be an enum or int or string
+  Seeking = 0,1,2
+  Type = Backend, Frontend, FullStack, Game, Hardware, Data Scientist, ... maybe allow people to classify themselves
+  Enjoy working with: Ardunios, Ouyas, HTTP, Html, Android, iOS, Linux, Windows, Mac
+  Skills = Languages and Technologies (maybe have a endorsement thing like Linkedin)
+  Portfolio = links to projects and etc
+  Social
+    Facebook
+    Linkedin
+    Github
+    Twitter
+    etc
+  Personality quiz?
+  Okcupid style question answers?
+  Messages
+  Likes/Dislikes
+  Attraction Level ( Match them with a global lvl as the girls will likely mark the boys lowers on average)
+
+Likes:
+  UserA
+  UserB
+  Weight (No, Eh, Yes)
+
+Messages:
+  UserA
+  UserB
+  Data
+  TimeStamp
