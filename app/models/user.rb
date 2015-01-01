@@ -14,8 +14,8 @@ class User < ActiveRecord::Base
     result = {}
     self.likes.each do |other|
       result[other] = !Like.where("userA_id = ? and userB_id = ?", other.id, self.id).empty?
+      puts other
     end
-    puts result
     result.select{|key, value| value == true}
   end
 end
