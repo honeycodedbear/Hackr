@@ -1,0 +1,9 @@
+<%= @current_user.name if @current_user %>
+
+<form action='/sign_in' method='post'>
+  <input type='text' name='email'>
+  <input type='password' name='password'>
+  <input type='submit' value='Login'>
+  <input name="authenticity_token" type="hidden" value="x37DrAAwyIIb7s+w2+AdoCR8cAJIpQhIetKRrPgG5VA=">
+  <a href="/sign_up"> Sign Up</a>
+</form>

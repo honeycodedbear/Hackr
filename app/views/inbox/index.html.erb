@@ -1,0 +1,24 @@
+<img class="profile_img img-responsive" src="http://fc05.deviantart.net/fs70/f/2012/239/a/d/aang_facebook_default_profile_picture_by_redjanuary-d5cm82l.png">
+<h3 class="user_name">  Age: ; Location: <%= @user.name.capitalize %> Creep: Match: </h2>
+
+
+<div class="chat_thread">
+  <% Message.getConversation(@user , @you).each do |msg| %>
+
+    <% if msg.userA_id == @you.id %>
+      <div class="from_you">
+        <p> <%= msg.data %> </p>
+      </div>
+    <% else %>
+      <div class="from_them">
+        <p> <%= msg.data %> </p>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
+<div class="row chat_box">
+<textarea class="col-xs-10">
+</textarea>
+<button class="col-xs-2 btn btn-success"> Send </button>
+</div>

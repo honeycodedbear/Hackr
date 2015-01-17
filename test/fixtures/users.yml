@@ -9,3 +9,12 @@ one: {}
 #
 two: {}
 #  column: value
+
+max:
+  name: Max Rogers
+  gender: 1
+  seeking: 0
+  type: Full Stack
+  location: New York
+  employment: Job Hunting
+  school: Stony Brook
