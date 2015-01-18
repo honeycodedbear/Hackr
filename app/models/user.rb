@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   #attr_accessible :name, :location, :gender, :seeking, :school, :type
 
-
+  has_many :pictures
   #Login stuff begin
   has_secure_password
   #before_save :fix_names
